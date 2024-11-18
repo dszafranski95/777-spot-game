@@ -1,0 +1,30 @@
+.reel-container {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .symbol {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .transition-transform {
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .reel-spin {
+    animation: spin 2s ease-out forwards;
+  }
+  
